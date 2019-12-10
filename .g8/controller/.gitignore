@@ -1,0 +1,13 @@
+target/
+tmp/
+project/plugins/project/
+metastore_db/*
+spark_warehouse/*
+
+.idea
+*.iml
+*.swp
+*.jar
+
+.env
+*~
