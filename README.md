@@ -30,5 +30,6 @@ Spark template
             splineActive=false
 
 ### New features:
-  1. Scalafmt configuration is used for format code. TODO
-  2. Add optional lib Spline linage (0.4.0). TODO
+  1. Add project/Dependencies.scala
+  2. Scalafmt configuration is used for format code. TODO
+  3. Add optional lib Spline linage (0.4.0). TODO
