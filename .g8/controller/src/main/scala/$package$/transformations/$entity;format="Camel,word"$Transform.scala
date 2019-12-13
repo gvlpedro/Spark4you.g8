@@ -10,17 +10,17 @@ case class Person(name:String, lastname: String, phone:String)
  *      THIS IS A TEMPLATE (with a simple transformation)
  ***************************************************************
  */
-object TransformationPersonId {
+object $entity;format="Camel,word"$Transform {
 
   /** Best practice for variety of schemas */
-  def withPersonId( field1: String ="name",
-                    field2: String ="lastname",
-                    phone: String="phone"
+  def with$entity$Id( field1: String ="name",
+                      field2: String ="lastname",
+                      phone: String="phone"
                   )(df: DataFrame): DataFrame = {
-    df.withColumn("person_id",
+    df.withColumn("$entity$_id",
       concat_ws("-", col(field1), col(field2), col(phone))
     )
   }
-  // used as follow: sourceDF.transform(withPersonId())
-  // used as follow: sourceDF.transform(withPersonId("name", "lastname", "addressStr"))
+  // used as follow: sourceDF.transform(with$entity$Id())
+  // used as follow: sourceDF.transform(with$entity$Id("name", "lastname", "addressStr"))
 }

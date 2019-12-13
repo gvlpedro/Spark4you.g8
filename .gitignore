@@ -4,7 +4,8 @@ project/plugins/project/
 metastore_db/*
 spark_warehouse/*
 
-.idea
+.metals/
+.idea/
 *.iml
 *.swp
 *.jar
