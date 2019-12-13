@@ -16,7 +16,7 @@ Spark template
 
   2. Start the app generation wizard: 
 
-            `g8 gvlpedro/g8spark`
+            `sbt new gvlpedro/Spark4you.g8`
   3. default parameters:
 
             package=com.project

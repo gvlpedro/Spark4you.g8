@@ -6,9 +6,8 @@ spark_warehouse/*
 
 .metals/
 .idea/
+
 *.iml
 *.swp
 *.jar
 
-.env
-*~
