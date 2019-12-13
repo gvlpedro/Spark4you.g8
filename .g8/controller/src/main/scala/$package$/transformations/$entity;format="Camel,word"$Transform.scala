@@ -4,7 +4,7 @@ import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, concat_ws}
 
 /** You must have an artifact com.tenant.project.io.schemas */
-case class Person(name:String, lastname: String, phone:String)
+case class $entity;format="Camel,word"$(name:String, lastname: String, phone:String)
 
 /***************************************************************
  *      THIS IS A TEMPLATE (with a simple transformation)
