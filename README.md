@@ -2,6 +2,11 @@
 
 Spark template 
 
+### Requirements
+
+    g8 0.11.0+
+    sbt 1.3.0+
+
 ### Test g8:
 
     `sbt`
@@ -17,6 +22,7 @@ Spark template
   2. Start the app generation wizard: 
 
             `sbt new gvlpedro/Spark4you.g8`
+
   3. default parameters:
 
             package=com.project
