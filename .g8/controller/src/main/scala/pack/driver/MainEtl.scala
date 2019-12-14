@@ -4,7 +4,7 @@ class MainEtl extends SparkSessionWrapper {
   // Use your io.schemas for implement CsvReader, JsonReader, XmlReader...
   def getInput(): DataFrame = ??? 
   val sourceDF=getInput()
-  sourceDF.transform(EntityTransform.withEntity$Id())
+  sourceDF.transform(EntityTransform.withEntityId())
 }
 
 object Main extends App{
