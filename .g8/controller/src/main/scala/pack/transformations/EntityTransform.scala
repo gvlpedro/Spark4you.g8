@@ -13,14 +13,14 @@ case class Entity(name:String, lastname: String, phone:String)
 object EntityTransform {
 
   /** Best practice for variety of schemas */
-  def with$entity$Id( field1: String ="name",
+  def withEntityId( field1: String ="name",
                       field2: String ="lastname",
                       phone: String="phone"
                   )(df: DataFrame): DataFrame = {
-    df.withColumn("$entity$_id",
+    df.withColumn("entity_id",
       concat_ws("-", col(field1), col(field2), col(phone))
     )
   }
-  // used as follow: sourceDF.transform(with$entity$Id())
-  // used as follow: sourceDF.transform(with$entity$Id("name", "lastname", "addressStr"))
+  // used as follow: sourceDF.transform(withEntity$Id())
+  // used as follow: sourceDF.transform(withEntityId("name", "lastname", "addressStr"))
 }
