@@ -1,4 +1,4 @@
-package $package$.driver
+package pack.driver
 
 trait SparkSessionWrapper extends Serializable {
   lazy val spark: SparkSession = {

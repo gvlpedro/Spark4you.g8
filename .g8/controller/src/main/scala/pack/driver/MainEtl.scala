@@ -1,4 +1,4 @@
-package $package$.driver
+package pack.driver
 
 
 class MainEtl extends SparkSessionWrapper {

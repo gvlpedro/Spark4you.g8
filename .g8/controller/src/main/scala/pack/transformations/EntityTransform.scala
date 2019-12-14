@@ -1,16 +1,16 @@
-package $package$.transformations
+package pack.transformations
 
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, concat_ws}
 
 /** You must have an artifact com.tenant.project.io.schemas */
-case class $entity;format="Camel,word"$(name:String, lastname: String, phone:String)
+case class Entity(name:String, lastname: String, phone:String)
 
 /***************************************************************
  *      THIS IS A TEMPLATE (with a simple transformation)
  ***************************************************************
  */
-object $entity;format="Camel,word"$Transform {
+object EntityTransform {
 
   /** Best practice for variety of schemas */
   def with$entity$Id( field1: String ="name",
