@@ -5,7 +5,7 @@ trait SparkSessionWrapper extends Serializable {
     SparkSession
       .builder()
       .master("local")
-      .appName("$projectname$")
+      .appName("myproject")
       .getOrCreate()
   }
 }
